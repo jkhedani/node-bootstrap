@@ -1,0 +1,24 @@
+{
+   "development": {
+        "db": {
+            "hosts":["localhost"],
+            "database": "api"
+        },
+        "port": "3000",
+        "host": "localhost",
+        "swig": {
+          "cache": false
+        }
+   },
+   "production": {
+        "db": {
+            "hosts":["1.1.1.1", "1.1.1.2", "1.1.1.3"],
+            "database": "api"
+        },
+        "port": "8080",
+        "host": "10.132.13.45",
+        "swig": {
+          "cache": "memory"
+        }
+   }
+}

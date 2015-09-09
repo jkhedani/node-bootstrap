@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %}Node Bootstrap{% endblock %}</title>
+    <!-- Stylesheets -->
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300'>
+    <link rel="stylesheet" type="text/css" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/components/animate.css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/dist/stylesheets/styles.min.css">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  {% block body_head %}{% endblock %}
+  <div class="container-fluid">
+    <div class="row">
+      {% block body %}{% endblock %}
+    </div>
+  </div>
+</body>
+
+<!-- Scripts -->
+<script type="text/javascript" src="/dist/javascripts/bundle.js"></script>
+
+{% block scripts %}{% endblock %}
+
+</html>

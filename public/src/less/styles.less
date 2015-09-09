@@ -1,0 +1,17 @@
+/**
+ * Mixins
+ */
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+h1 {
+        margin-top: 140px;
+}
